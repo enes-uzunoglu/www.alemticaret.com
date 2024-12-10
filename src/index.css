@@ -1,5 +1,5 @@
 /*MontserratFont*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
 
 /*TailwindCss*/
 @tailwind base;
@@ -29,22 +29,45 @@
     text-xl sm:text-2xl md:text-3xl lg:text-4xl
     leading-7 sm:leading-8 md:leading-9 lg:leading-[2rem];
   }
+}
 
-  .h4 {
-    @apply text-primaryTextColor font-montserrat font-bold text-center
+@layer components {
+  .p1 {
+    @apply text-secondaryTextColor font-montserrat font-bold text-center
     text-lg sm:text-xl md:text-2xl lg:text-3xl
     leading-6 sm:leading-7 md:leading-8 lg:leading-[1.75rem];
   }
 
-  .h5 {
-    @apply text-primaryTextColor font-montserrat font-bold text-center
+  .p2 {
+    @apply text-secondaryTextColor font-montserrat font-bold text-center
     text-base sm:text-lg md:text-xl lg:text-2xl
     leading-5 sm:leading-6 md:leading-7 lg:leading-[1.5rem];
   }
 
-  .h6 {
-    @apply text-primaryTextColor font-montserrat font-bold text-center
+  .p3 {
+    @apply text-secondaryTextColor font-montserrat font-bold text-center
     text-sm sm:text-base md:text-lg lg:text-xl
-    leading-4 sm:leading-5 md:leading-6 lg:leading-[1.25rem];
+    leading-4 sm:leading-5 md:leading-6 lg:leading-[1.25rem]
+    text-[1rem];
+  }
+}
+
+@layer components {
+  .button1 {
+    @apply bg-primaryColor text-white font-montserrat font-bold text-center py-3 px-6 rounded-md 
+    text-lg sm:text-xl md:text-2xl lg:text-3xl 
+    leading-6 sm:leading-7 md:leading-8 lg:leading-[1.75rem] max-w-xs;
+  }
+
+  .button2 {
+    @apply border-2 border-primaryColor text-primaryColor font-montserrat font-bold text-center py-2 px-5 rounded-md 
+      text-base sm:text-lg md:text-xl lg:text-2xl 
+      leading-6 sm:leading-7 md:leading-8 lg:leading-[1.75rem] max-w-sm;
+  }
+
+  .button3 {
+    @apply bg-primaryColor text-white font-montserrat font-bold text-center py-1.5 px-4 rounded-md 
+    text-sm sm:text-base md:text-lg lg:text-xl 
+    leading-5 sm:leading-6 md:leading-7 lg:leading-[1.5rem] max-w-md;
   }
 }
