@@ -1,42 +1,35 @@
+import { BookOpenText, Building2, TrendingUp } from "lucide-react";
 import React from "react";
 
 const BestServices = () => {
   return (
-    <div>
-      <h2>The Best Services We Offer</h2>
+    <section>
       <div>
-        <div>
-          <img src="https://picsum.photos/300/360" alt="Service 1" />
-          <h3>Service 1</h3>
-          <p>Description of service 1 goes here.</p>
-        </div>
-        <div>
-          <img src="https://picsum.photos/300/361" alt="Service 2" />
-          <h3>Service 2</h3>
-          <p>Description of service 2 goes here.</p>
-        </div>
-        <div>
-          <img src="https://picsum.photos/300/362" alt="Service 3" />
-          <h3>Service 3</h3>
-          <p>Description of service 3 goes here.</p>
-        </div>
-        <div>
-          <img src="https://picsum.photos/300/363" alt="Service 4" />
-          <h3>Service 4</h3>
-          <p>Description of service 4 goes here.</p>
-        </div>
-        <div>
-          <img src="https://picsum.photos/300/364" alt="Service 5" />
-          <h3>Service 5</h3>
-          <p>Description of service 5 goes here.</p>
-        </div>
-        <div>
-          <img src="https://picsum.photos/300/365" alt="Service 6" />
-          <h3>Service 6</h3>
-          <p>Description of service 6 goes here.</p>
-        </div>
+        <h2>EN İYİ HİZMETLER.</h2>
+        <p>Çözmeye çalıştığımız sorunlar arasında</p>
       </div>
-    </div>
+
+      <div>
+        <BookOpenText />
+        <h3>Kolay Zaferler</h3>
+        <p>En iyi gülümsemenizi kazanın</p>
+      </div>
+
+      <div>
+        <Building2 />
+        <h3>Beton</h3>
+        <p>
+          Defaleate, en güzel gülümsemenizi keşfetmenize yardımcı olmaya
+          odaklanmıştır
+        </p>
+      </div>
+
+      <div>
+        <TrendingUp />
+        <h3>Büyüme Hileleri</h3>
+        <p>Her engeli ve diğer herhangi bir problemi aşmak.</p>
+      </div>
+    </section>
   );
 };
 
