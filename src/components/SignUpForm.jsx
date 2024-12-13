@@ -47,7 +47,8 @@ export default function SignUpForm() {
     }
   };
 
-  const selectedRole = watch("role_id");
+  const selectedRoleId = watch("role_id");
+  console.log(selectedRoleId);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -117,7 +118,7 @@ export default function SignUpForm() {
       </div>
 
       {/* Mağaza Detayları (Eğer rol "store" ise) */}
-      {selectedRole === "store" && (
+      {selectedRoleId === "2" && (
         <div>
           {/* Mağaza Adı */}
           <label>Mağaza Adı:</label>

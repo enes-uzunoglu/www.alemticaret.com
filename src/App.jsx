@@ -6,16 +6,25 @@ import FeaturedProducts from "./components/FeaturedProducts";
 import Navbar from "./layout/Navbar";
 import Clients from "./components/Clients";
 import BestServices from "./components/BestServices";
+import SignUpForm from "./components/SignUpForm";
+import LoginForm from "./components/LoginForm";
+import Footer from "./layout/Footer";
+import FeaturedPostCard from "./components/FeaturedPostCard";
+import FeaturedPosts from "./components/FeaturedPosts";
 
 function App() {
   return (
     <div className="">
-      <BestsellerProducts />
-      <ProductsOfWeek />
+      {/* <BestsellerProducts /> */}
+      {/*<ProductsOfWeek />
       <FeaturedProducts />
       <Navbar />
-      <Clients />
-      <BestServices />
+      <Clients />*/}
+      {/* <SignUpForm />
+      <LoginForm /> */}
+      {/* <Footer /> */}
+      {/* <BestServices /> */}
+      <FeaturedPosts />
     </div>
   );
 }

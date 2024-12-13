@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
+import LoadMoreProductsButton from "./buttons/LoadMoreProductsButton";
 
 const bestSeller = [
   {
@@ -38,7 +39,7 @@ const bestSeller = [
     newPrice: "₺240",
   },
 ];
-
+//TODO: bestseller products
 export default function BestsellerProducts() {
   return (
     <div className="grid grid-rows-[auto,1fr] gap-4 md:gap-6 md:max-w-[1200px]">
@@ -52,6 +53,8 @@ export default function BestsellerProducts() {
           <ProductCard key={index} product={item} />
         ))}
       </div>
+
+      <LoadMoreProductsButton />
     </div>
   );
 }
