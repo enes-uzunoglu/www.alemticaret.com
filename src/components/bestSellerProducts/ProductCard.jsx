@@ -4,10 +4,10 @@ const ProductCard = (props) => {
   const { product } = props;
   const { image, title, description, oldPrice, newPrice } = product;
   return (
-    <div className="grid grid-rows-[auto,1fr] gap-4 md:gap-6 place-items-center">
+    <div className="grid grid-rows-[auto,1fr] gap-4 md:gap-6 ">
       <img className="" src={image} alt={title} />
 
-      <div className="flex flex-col items-center gap-2 md:gap-3">
+      <div className="flex flex-col items-center0 gap-2 md:gap-3">
         <h3 className="h3">{title}</h3>
         <p className="p3 text-secondaryTextColor">{description}</p>
 

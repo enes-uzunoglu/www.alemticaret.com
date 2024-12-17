@@ -1,6 +1,6 @@
 import React from "react";
-import ProductCard from "./ProductCard";
-import LoadMoreProductsButton from "./buttons/LoadMoreProductsButton";
+import { ProductCard } from "./index.js";
+import { LoadMoreProductsButton } from "../buttons";
 
 const bestSeller = [
   {
@@ -38,11 +38,32 @@ const bestSeller = [
     oldPrice: "₺300",
     newPrice: "₺240",
   },
+  {
+    image: "https://picsum.photos/300/365",
+    title: "Ürün Başlığı 6",
+    description: "Ürün Açıklaması 6",
+    oldPrice: "₺350",
+    newPrice: "₺280",
+  },
+  {
+    image: "https://picsum.photos/300/366",
+    title: "Ürün Başlığı 7",
+    description: "Ürün Açıklaması 7",
+    oldPrice: "₺400",
+    newPrice: "₺320",
+  },
+  {
+    image: "https://picsum.photos/300/367",
+    title: "Ürün Başlığı 8",
+    description: "Ürün Açıklaması 8",
+    oldPrice: "₺450",
+    newPrice: "₺360",
+  },
 ];
-//TODO: bestseller products
-export default function BestsellerProducts() {
+
+export default function BestSellerProducts() {
   return (
-    <div className="grid grid-rows-[auto,1fr] gap-4 md:gap-6 md:max-w-[1200px]">
+    <div className="grid grid-rows-[auto,1fr] gap-4 md:gap-6 ">
       <h2 className="h2">BESTSELLER PRODUCTS</h2>
       <p className="p1 text-secondaryTextColor">
         Problems trying to resolve the conflict between

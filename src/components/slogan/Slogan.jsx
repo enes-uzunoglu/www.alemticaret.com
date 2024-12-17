@@ -2,7 +2,7 @@ import React from "react";
 
 const image1 = "https://picsum.photos/240/360";
 const image2 = "https://picsum.photos/240/361";
-export default function FeaturedProducts() {
+export default function Slogan() {
   return (
     <div className="grid grid-rows-2 gap-4 md:grid-cols-2 md:max-w-[1200px]">
       <div className="grid gap-4">
