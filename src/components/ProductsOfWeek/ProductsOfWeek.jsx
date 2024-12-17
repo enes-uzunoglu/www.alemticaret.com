@@ -18,14 +18,13 @@ const cardCovers = [
 
 export default function ProductsOfWeek() {
   return (
-    //TODO: OLMADI:( CENTER OLMADI
-    <div className="grid md:grid-cols-2 rows-2s  ">
-      <div class="flex gap-2 justify-center md:grid md:max-w-[200px] md:col-start-2 md:row-start-1  md:justify-center">
-        <span classname="md:block">Top</span>
-        <span classname="md:block">Product</span>
-        <span classname="md:block">Of</span>
-        <span classname="md:block">The</span>
-        <span classname="md:block">Week</span>
+    <div className="grid md:grid-cols-2 rows-2s">
+      <div className="flex gap-2 justify-center md:grid md:max-w-[200px] md:col-start-2 md:row-start-1 md:justify-center">
+        <span className="md:block">Top</span>
+        <span className="md:block">Product</span>
+        <span className="md:block">Of</span>
+        <span className="md:block">The</span>
+        <span className="md:block">Week</span>
       </div>
 
       <div className="flex flex-col gap-2 md:flex-row max-w-[700px]">
@@ -37,20 +36,4 @@ export default function ProductsOfWeek() {
       </div>
     </div>
   );
-}
-
-{
-  /* TODO:Satır 23: .map methodu işimi zorlaştırıyordu; çünkü map her bir itemi,
-  yine array [{}] formatında döndürüyordu. Bana obje lazım. */
-}
-
-{
-  /* TODO:<div class="flex gap-2 items-center md:grid md:col-start-2 row-start-1 whitespace-normal md:whitespace-pre-line">
-        <h2 className="h2 md:whitespace-pre-line whitespace-normal">
-          the
-          <br />
-          products
-          <br /> of <br />
-          week
-        </h2>} */
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import FeaturePostCard from "./FeaturedPostCard";
+import { FeaturedPostCard } from "../../components";
 
 const posts = [
   { image: "https://picsum.photos/360/300" },
@@ -10,7 +10,7 @@ export default function FeaturedPosts() {
   return (
     <div>
       {posts.map((post, index) => (
-        <FeaturePostCard key={index} post={post} />
+        <FeaturedPostCard key={index} post={post} />
       ))}
     </div>
   );

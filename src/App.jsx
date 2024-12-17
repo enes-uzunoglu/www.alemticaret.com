@@ -1,13 +1,21 @@
 import React from "react";
 import "./App.css";
-
-import PrimaryLayout from "./layout/PrimaryLayout";
+import { Provider } from "react-redux";
+import { BrowserRouter as Router } from "react-router-dom";
+import store from "./store/store";
+import { PrimaryLayout } from "./layout";
+import { LoginForm } from "./components";
 
 function App() {
   return (
-    <div className="">
-      <PrimaryLayout />
-    </div>
+    <Provider store={store}>
+      <Router>
+        <div>
+          <LoginForm />
+          <PrimaryLayout />
+        </div>
+      </Router>
+    </Provider>
   );
 }
 

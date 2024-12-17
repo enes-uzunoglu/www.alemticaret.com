@@ -1,6 +1,5 @@
 import React from "react";
-import { ProductCard } from "./index.js";
-import { LoadMoreProductsButton } from "../buttons";
+import { ProductCard, LoadMoreProductsButton } from "../../components";
 
 const bestSeller = [
   {

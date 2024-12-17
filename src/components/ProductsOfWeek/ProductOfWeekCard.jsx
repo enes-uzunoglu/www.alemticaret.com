@@ -1,5 +1,5 @@
 import React from "react";
-import { ExploreItemsButton } from "../buttons";
+import { ExploreItemsButton } from "../../components";
 
 const ProductOfWeekCard = (props) => {
   const { cardCover } = props;
