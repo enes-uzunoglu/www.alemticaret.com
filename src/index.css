@@ -1,0 +1,61 @@
+/*MontserratFont*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
+
+/*TailwindCss*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+:root {
+} 
+*/
+
+@layer components {
+  body {
+    @apply text-primaryTextColor font-montserrat font-bold text-center;
+  }
+}
+
+@layer components {
+  .h1 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+    leading-[2.5rem] sm:leading-[3rem] md:leading-[3.5rem] lg:leading-[4rem];
+  }
+
+  .h2 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+    leading-8 sm:leading-9 md:leading-10 lg:leading-[2.5rem];
+  }
+
+  .h3 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl
+    leading-7 sm:leading-8 md:leading-9 lg:leading-[2rem];
+  }
+}
+
+@layer components {
+  .p1 {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl
+    leading-6 sm:leading-7 md:leading-8 lg:leading-[1.75rem];
+  }
+
+  .p2 {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl
+    leading-5 sm:leading-6 md:leading-7 lg:leading-[1.5rem];
+  }
+
+  .p3 {
+    @apply text-sm sm:text-base md:text-lg lg:text-xl
+    leading-4 sm:leading-5 md:leading-6 lg:leading-[1.25rem]
+    text-[1rem];
+  }
+}
+
+@layer components {
+  .button {
+    @apply py-2 px-4 rounded-md text-center 
+           text-base sm:text-lg md:text-xl lg:text-2xl 
+           leading-6 sm:leading-7 md:leading-8 lg:leading-[1.75rem];
+  }
+}
