@@ -1,21 +1,26 @@
 import React from "react";
 import "./App.css";
-import { Provider } from "react-redux";
-import { BrowserRouter as Router } from "react-router-dom";
-import store from "./store/store";
+
+import { Switch, Route } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+/*React-Toastify-Css*/
+import "react-toastify/dist/ReactToastify.css";
 import { PrimaryLayout } from "./layout";
 import { LoginForm } from "./components";
 
 function App() {
   return (
-    <Provider store={store}>
-      <Router>
-        <div>
+    <>
+      <ToastContainer />
+      <Switch>
+        <Route path="/login">
           <LoginForm />
+        </Route>
+        <Route path="/">
           <PrimaryLayout />
-        </div>
-      </Router>
-    </Provider>
+        </Route>
+      </Switch>
+    </>
   );
 }
 

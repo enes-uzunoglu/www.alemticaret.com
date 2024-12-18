@@ -5,6 +5,7 @@ import {
   ShoppingCart,
   UserRound,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 export default function Navbar() {
@@ -15,7 +16,9 @@ export default function Navbar() {
       <div className="grid grid-cols-10">
         <h1 className="h1 col-span-5 justify-self-start">Alem Ticaret</h1>
         <div className="col-start-7 col-span-4 flex justify-end items-center gap-4 text-primaryTextColor">
-          <UserRound />
+          <Link to="/login">
+            <UserRound />
+          </Link>
           <Search />
           <ShoppingCart />
           <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
