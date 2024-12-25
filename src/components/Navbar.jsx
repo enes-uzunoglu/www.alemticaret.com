@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   AlignJustify,
   AlignRight,
@@ -5,36 +7,76 @@ import {
   ShoppingCart,
   UserRound,
 } from "lucide-react";
-import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import {
+  NavigationMenu,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" text-primaryTextColor px-12">
-      <div className="grid grid-cols-10">
-        <h1 className="h1 col-span-5 justify-self-start">Alem Ticaret</h1>
-        <div className="col-start-7 col-span-4 flex justify-end items-center gap-4 text-primaryTextColor">
-          <Link to="/login">
-            <UserRound />
+    <nav className="bg-white shadow-md sticky top-0 z-50  min-w-[280px] md:max-w-[480px] mx-auto">
+      {/* Header */}
+      <div className="flex items-center justify-between px-2 py-2">
+        {/* Logo */}
+        <h1 className="h3 font-semibold text-blue-600">Alem Ticaret</h1>
+        {/* Icons and Hamburger Menu */}
+        <div className="flex items-center gap-2">
+          <Link to="/login" className="text-gray-600 hover:text-blue-600">
+            <UserRound size={16} />
           </Link>
-          <Search />
-          <ShoppingCart />
-          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <AlignRight /> : <AlignJustify />}
+          <Search className="text-gray-600 hover:text-blue-600" size={16} />
+          <ShoppingCart
+            className="text-gray-600 hover:text-blue-600"
+            size={16}
+          />
+          <button
+            className="text-gray-600 md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <AlignRight size={16} /> : <AlignJustify size={16} />}
           </button>
         </div>
       </div>
+
+      {/* Navigation Menu */}
       <div
-        className={`text-secondaryTextColor justify-center gap-2 md:flex md:gap-6  ${
-          isOpen ? "grid" : "hidden"
-        } mt-4 md:mt-0`}
+        className={`${
+          isOpen ? "flex" : "hidden"
+        } md:flex md:min-w-[480px] md:mx-auto justify-center`}
       >
-        <h2 className="h2">Anasayfa</h2>
-        <h2 className="h2">Hakkımızda</h2>
-        <h2 className="h2">Ürünler</h2>
-        <h2 className="h2">İletişim</h2>
+        <NavigationMenu className="px-4 md:px-0">
+          <NavigationMenuList className="flex flex-col md:flex-row items-center gap-3 py-2 md:py-0 text-sm">
+            <Link
+              to="/products"
+              className="text-gray-600 hover:text-blue-600 font-medium"
+            >
+              Anasayfa
+            </Link>
+
+            <Link
+              to="/products"
+              className="text-gray-600 hover:text-blue-600 font-medium"
+            >
+              Hakkımızda
+            </Link>
+
+            <Link
+              to="/products"
+              className="text-gray-600 hover:text-blue-600 font-medium"
+            >
+              Ürünler
+            </Link>
+
+            <Link
+              to="/products"
+              className="text-gray-600 hover:text-blue-600 font-medium"
+            >
+              İletişim
+            </Link>
+          </NavigationMenuList>
+        </NavigationMenu>
       </div>
     </nav>
   );
