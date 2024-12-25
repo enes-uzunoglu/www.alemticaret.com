@@ -46,7 +46,7 @@ const ClientsData = [
 
 const Clients = () => {
   return (
-    <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center md:gap-6">
+    <div className="max-w-[280px] mx-auto md:max-w-[480px] md:flex-nowrap flex flex-wrap gap-x-5 gap-y-3 justify-center md:gap-6">
       {ClientsData.map((image, index) => (
         <Client key={index} src={image.src} alt={image.alt} link={image.link} />
       ))}

@@ -4,7 +4,7 @@ import { HomePage } from "../pages";
 
 export default function PrimaryLayout() {
   return (
-    <div>
+    <div className="flex flex-col items-center gap-12">
       <Navbar />
       <main>
         <HomePage />

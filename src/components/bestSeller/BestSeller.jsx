@@ -1,5 +1,7 @@
 import React from "react";
-import { ProductCard, LoadMoreProductsButton } from "..";
+import { ProductCard } from "..";
+
+import { Button } from "../ui/button";
 
 const bestSeller = [
   {
@@ -60,9 +62,9 @@ const bestSeller = [
   },
 ];
 
-export default function BestSellerProducts() {
+export default function BestSeller() {
   return (
-    <div className="grid grid-rows-[auto,1fr] gap-4 md:gap-6 ">
+    <div className="max-w-[280px] md:max-w-[480px] mx-auto grid grid-rows-[auto,1fr] gap-4 md:gap-6 ">
       <h2 className="h2">BESTSELLER PRODUCTS</h2>
       <p className="p1 text-secondaryTextColor">
         Problems trying to resolve the conflict between
@@ -74,7 +76,7 @@ export default function BestSellerProducts() {
         ))}
       </div>
 
-      <LoadMoreProductsButton />
+      <Button className="max-w-max mx-auto">Load More Products</Button>
     </div>
   );
 }
