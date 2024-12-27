@@ -1,7 +1,7 @@
 // loginThunk.js
 import axios from 'axios';
-import { setUser } from '../actions/loginActions/setUser';
-import { setLoginError } from '../actions/loginActions/setLoginError';  // Action'ları import ediyoruz
+import { setUser } from '../actions/setUser';
+import { setLoginError } from '../actions/setLoginError';  // Action'ları import ediyoruz
 
 export const loginThunk = (credentials) => async (dispatch) => {
     try {
