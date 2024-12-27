@@ -1,7 +1,7 @@
 // loginReducer.js
 
-import { USER_SET } from '../actions/loginActions/setUser';
-import { LOGIN_ERROR } from '../actions/loginActions/setLoginError';
+import { USER_SET } from '../actions/setUser';
+import { LOGIN_ERROR } from '../actions/setLoginError';
 
 const initialState = {
     user: null,  // Kullanıcı bilgilerini tutacağız
