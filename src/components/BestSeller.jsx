@@ -1,7 +1,6 @@
 import React from "react";
-import { ProductCard } from "..";
-
-import { Button } from "../ui/button";
+import ProductCard from "./ProductCard";
+import { Button } from "./ui/button";
 
 const bestSeller = [
   {

@@ -1,2 +1,3 @@
 // Pages
-export { default as HomePage } from './homePage/HomePage';
+export { default as HomePage } from './HomePage';
+export { default as ShopPage } from './ShopPage';

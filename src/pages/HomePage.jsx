@@ -7,12 +7,13 @@ import {
   Featured,
   ProductsOfWeek,
   Satisfaction,
-} from "../../components";
+} from "../components";
+import { PrimaryLayout } from "@/layout";
 
-export default function homePage() {
+export default function HomePage() {
   return (
     //TODO: Burada items-center ekleyince carosel inanılmaz daralıyor.
-    <div className="flex flex-col mx-auto  gap-12">
+    <PrimaryLayout>
       <HeaderCarousel />
       <Clients />
       <ProductsOfWeek />
@@ -20,6 +21,6 @@ export default function homePage() {
       <Satisfaction />
       <BestServices />
       <Featured />
-    </div>
+    </PrimaryLayout>
   );
 }
