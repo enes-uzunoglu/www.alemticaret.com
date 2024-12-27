@@ -1,8 +1,9 @@
 // src/components/index.js
 
 // Auth Components
-export { default as LoginForm } from './LoginForm';
-export { default as SignUpForm } from './SignUpForm';
+export { default as LoginForm } from './user/LoginForm';
+export { default as SignUpForm } from './user/SignUpForm';
+export { default as User } from './user/User';  // 'User' bileşeni dışa aktarılmış.
 
 // Layout Components
 export { default as Navbar } from './Navbar';
@@ -24,4 +25,5 @@ export { default as FeaturedCard } from './featured/FeaturedCard';
 export { default as Clients } from './Clients/Clients';
 export { default as Client } from './Clients/Client';
 
+// Other Utility Components
 export { default as Satisfaction } from './Satisfaction';

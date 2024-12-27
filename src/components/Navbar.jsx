@@ -23,7 +23,7 @@ export default function Navbar() {
         <h1 className="h3 font-semibold text-blue-600">Alem Ticaret</h1>
         {/* Icons and Hamburger Menu */}
         <div className="flex items-center gap-2">
-          <Link to="/login" className="text-gray-600 hover:text-blue-600">
+          <Link to="/user" className="text-gray-600 hover:text-blue-600">
             <UserRound size={16} />
           </Link>
           <Search className="text-gray-600 hover:text-blue-600" size={16} />
