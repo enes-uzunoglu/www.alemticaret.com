@@ -1,14 +1,15 @@
-import { Categories } from "@/components";
+import { Categories, Clients } from "@/components";
 import ProductsList from "@/components/ProductList";
 import { PrimaryLayout } from "@/layout";
 import React from "react";
+import Footer from "@/components/Footer";
 
 export default function ShopPage() {
   return (
-    //TODO: Burada items-center ekleyince carosel inanılmaz daralıyor.
     <PrimaryLayout>
       <Categories />
       <ProductsList />
+      <Clients />
     </PrimaryLayout>
   );
 }

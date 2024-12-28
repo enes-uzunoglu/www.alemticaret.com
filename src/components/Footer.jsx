@@ -1,69 +1,94 @@
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"; // SHADCN Card component'leri
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 export default function Footer() {
   return (
-    <footer className="max-w-[280px] md:max-w-[480px] mx-auto py-12 px-4 bg-gray-100 text-gray-700">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <Card>
-          <CardHeader>
-            <CardTitle>Alem Ticaret</CardTitle>
+    <footer className=" max-w-[280px] md:max-w-[480px] mx-auto py-6 px-4 bg-gray-100 text-gray-700">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {/* Alem Ticaret */}
+        <Card className="bg-transparent shadow-none flex flex-col justify-center items-center">
+          <CardHeader className="pb-1 text-center">
+            <CardTitle className="text-[10px] font-bold leading-tight">
+              Alem Ticaret
+            </CardTitle>
           </CardHeader>
-          <CardContent>
-            <p>Biz Kimiz</p>
-            <p>Kariyer</p>
-            <p>İletişim</p>
+          <CardContent className="space-y-1 text-center">
+            <p className="text-[8px] font-light hover:underline cursor-pointer">
+              Biz Kimiz
+            </p>
+            <p className="text-[8px] font-light hover:underline cursor-pointer">
+              Kariyer
+            </p>
+            <p className="text-[8px] font-light hover:underline cursor-pointer">
+              İletişim
+            </p>
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Tedarik</CardTitle>
+        {/* Tedarik */}
+        <Card className="bg-transparent shadow-none flex flex-col justify-center items-center">
+          <CardHeader className="pb-1 text-center">
+            <CardTitle className="text-[10px] font-bold leading-tight">
+              Tedarik
+            </CardTitle>
           </CardHeader>
-          <CardContent>
-            <p>Tedarikçi Ol</p>
-            <p>Destek</p>
+          <CardContent className="space-y-1 text-center">
+            <p className="text-[8px] font-light hover:underline cursor-pointer">
+              Tedarikçi Ol
+            </p>
+            <p className="text-[8px] font-light hover:underline cursor-pointer">
+              Destek
+            </p>
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Yardım</CardTitle>
+        {/* Yardım */}
+        <Card className="bg-transparent shadow-none flex flex-col justify-center items-center">
+          <CardHeader className="pb-1 text-center">
+            <CardTitle className="text-[10px] font-bold leading-tight">
+              Yardım
+            </CardTitle>
           </CardHeader>
-          <CardContent>
-            <p>FAQ</p>
-            <p>Canlı Destek</p>
+          <CardContent className="space-y-1 text-center">
+            <p className="text-[8px] font-light hover:underline cursor-pointer">
+              FAQ
+            </p>
+            <p className="text-[8px] font-light hover:underline cursor-pointer">
+              Canlı Destek
+            </p>
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Sosyal Medya</CardTitle>
+        {/* Sosyal Medya */}
+        <Card className="bg-transparent shadow-none flex flex-col justify-center items-center">
+          <CardHeader className="pb-1 text-center">
+            <CardTitle className="text-[10px] font-bold leading-tight">
+              Sosyal Medya
+            </CardTitle>
           </CardHeader>
-          <CardContent>
-            <div className="flex justify-center gap-4 md:flex-col md:items-center text-primaryColor">
-              <Facebook
-                className="text-primaryColor  transition duration-300 hover:scale-125 transform"
-                size={16}
-              />
-              <Instagram
-                className="text-primaryColor  transition duration-300 hover:scale-125 transform"
-                size={16}
-              />
-              <Twitter
-                className="text-primaryColor  transition duration-300 hover:scale-125 transform"
-                size={16}
-              />
-              <Youtube
-                className="text-primaryColor  transition duration-300 hover:scale-125 transform"
-                size={16}
-              />
-            </div>
+          <CardContent className="flex gap-2 text-primaryColor justify-center">
+            <Facebook
+              className="transition-transform duration-300 hover:scale-110 cursor-pointer"
+              size={14}
+            />
+            <Instagram
+              className="transition-transform duration-300 hover:scale-110 cursor-pointer"
+              size={14}
+            />
+            <Twitter
+              className="transition-transform duration-300 hover:scale-110 cursor-pointer"
+              size={14}
+            />
+            <Youtube
+              className="transition-transform duration-300 hover:scale-110 cursor-pointer"
+              size={14}
+            />
           </CardContent>
         </Card>
       </div>
 
-      <div className="mt-6 text-center text-gray-500">
+      {/* Alt Bilgiler */}
+      <div className="mt-4 text-center text-[8px] text-gray-500">
         <p>Güvenli Alışveriş Sistemi</p>
         <p>© Türkiye Tüm Hakları Saklıdır</p>
       </div>
