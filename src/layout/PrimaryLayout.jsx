@@ -1,14 +1,11 @@
 import React from "react";
 import { Navbar, Footer } from "../components";
-import { HomePage } from "../pages";
 
-export default function PrimaryLayout() {
+export default function PrimaryLayout({ children }) {
   return (
     <div className="flex flex-col items-center gap-12">
       <Navbar />
-      <main>
-        <HomePage />
-      </main>
+      <main className="">{children}</main>
       <Footer />
     </div>
   );

@@ -29,10 +29,8 @@ export default function ProductsList() {
   const sortedProducts = [...currentProducts];
   if (sortOption === "popularity") {
     sortedProducts.sort((a, b) => b.popularity - a.popularity);
-  } else if (sortOption === "price-asc") {
+  } else if (sortOption === "price") {
     sortedProducts.sort((a, b) => a.price - b.price);
-  } else if (sortOption === "price-desc") {
-    sortedProducts.sort((a, b) => b.price - a.price);
   } else if (sortOption === "rating") {
     sortedProducts.sort((a, b) => b.rating - a.rating);
   }
@@ -41,9 +39,9 @@ export default function ProductsList() {
   const totalPages = Math.ceil(totalProducts / itemsPerPage);
 
   return (
-    <div className="max-w-full md:max-w-[960px] mx-auto px-4">
+    <div className="max-w-[280px] md:max-w-[480px] mx-auto">
       {/* Filters and View Options */}
-      <div className="max-w-[280px] md:max-w-[480px] mx-auto mb-8">
+      <div className="max-w-full md:max-w-[480px] mx-auto mb-8">
         {/* Product count */}
         <div className="text-xs text-gray-500 mb-4">
           {totalProducts} ürün gösteriliyor
@@ -86,8 +84,8 @@ export default function ProductsList() {
             >
               <option value="">Seçiniz</option>
               <option value="popularity">En Popüler</option>
-              <option value="price-asc">Artan Fiyat</option>
-              <option value="price-desc">Azalan Fiyat</option>
+              <option value="price">Artan Fiyat</option>
+              <option value="price">Azalan Fiyat</option>
               <option value="rating">Yüksek Puan</option>
             </select>
           </div>
@@ -99,7 +97,7 @@ export default function ProductsList() {
         className={`grid ${
           viewMode === "grid"
             ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-4 gap-6"
-            : "grid-cols-2 gap-6" // Liste görünümünde her satırda 2 ürün
+            : "grid-cols-1 gap-6" // Liste görünümünde her satırda 1 ürün olacak
         }`}
       >
         {sortedProducts.map((item, index) => (

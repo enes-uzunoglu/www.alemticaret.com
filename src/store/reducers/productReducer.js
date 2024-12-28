@@ -1,9 +1,9 @@
 // src/store/reducers/productReducer.js
 const initialProductState = {
-  categories: [],
+  categories: [], 
   productList: [],
   total: 0,
-  limit: 25,
+  limit: 25, 
   offset: 0,
   filter: '',
   fetchState: 'NOT_FETCHED',

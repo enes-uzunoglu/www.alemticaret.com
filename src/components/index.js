@@ -13,8 +13,8 @@ export { default as Footer } from './Footer';
 // Product Components
 export { default as ProductsOfWeek } from './ProductsOfWeek/ProductsOfWeek';
 export { default as ProductOfWeekCard } from './ProductsOfWeek/ProductOfWeekCard';
-export { default as BestSeller } from './bestSeller/BestSeller';
-export { default as ProductCard } from './bestSeller/ProductCard';
+export { default as BestSeller } from './BestSeller';
+export { default as ProductCard } from './ProductCard';
 
 // Feature Components
 export { default as BestServices } from './BestServices';
@@ -27,3 +27,5 @@ export { default as Client } from './Clients/Client';
 
 // Other Utility Components
 export { default as Satisfaction } from './Satisfaction';
+
+export { default as Categories } from './Categories';

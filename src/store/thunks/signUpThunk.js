@@ -10,3 +10,4 @@ export const signUpThunk = (userData) => async (dispatch) => {
     throw error; // Hata durumunda hatayı fırlat
   }
 };
+  
